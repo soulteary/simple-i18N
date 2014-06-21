@@ -4,7 +4,7 @@
      * @file:   i18N.js
      * @desc:   一个简单的i18N.js
      * @author: [soulteary](soulteary@qq.com)
-     * @date:   2014.06.21
+     * @date:   2014.06.22
      * @useage:
      *
      *  --default HTML structure:
@@ -180,5 +180,5 @@
         translate(getLang(true))
     }
 
-})({"ver": "2014.06.21", "win": window, "doc": document, "api": "lang"});
+})({"ver": "2014.06.22", "win": window, "doc": document, "api": "lang"});
 
