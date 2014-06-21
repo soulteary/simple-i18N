@@ -1,72 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Simple-i18n by soulteary</title>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>localStorage Limit Test</title>
+    <link rel="stylesheet" href="style.min.css?r=1403367474229"/>
+</head>
+<body>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1 class="header">Simple-i18n</h1>
-        <p class="header">适用于单页面的i18N脚本。</p>
+<div class="content-wrap">
 
-        <ul>
-          <li class="download"><a class="buttons" href="https://github.com/soulteary/simple-i18N/zipball/master">Download ZIP</a></li>
-          <li class="download"><a class="buttons" href="https://github.com/soulteary/simple-i18N/tarball/master">Download TAR</a></li>
-          <li><a class="buttons github" href="https://github.com/soulteary/simple-i18N">View On GitHub</a></li>
-        </ul>
+    <a class="pure-button pure-button-primary" href="javascript:lang('zh')">zh</a>
+    <a class="pure-button pure-button-info" href="javascript:lang('en')">en</a>
 
-        <p class="header">This project is maintained by <a class="header name" href="https://github.com/soulteary">soulteary</a></p>
+    <h1 data-lang-en="A simple i18N.js">一个简单的i18N.js</h1>
 
+    <div>
+        <form>
+            <h3 data-lang-en="What's this?">这货是什么</h3>
 
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+            <p data-lang-en="A simple script, it can help you to quickly switch between pages of content. If you do not pursue search engine SEO, content just to show it, use it, could not be easier.">
+                一个简单的脚本，可以帮助你快速的切换页面内容的语言。如果你不追求搜索引擎的SEO，只是为了内容展示的话，使用它，再简单不过了。
+            </p>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+            <p data-lang-en="Want to see the Chinese version of this classic text below it? Poke the top left corner of the page 'en' button if you refresh the page, ah, will or Chinese.">
+                想看下面这段经典文本的英文版么？戳一下页面左上角的“en”按钮，如果你刷新页面，嗯，还将还是英文。
+            </p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+            <h4 data-lang-en="Chinese dream<sup>Speech</sup>">“中国梦”<sup>演讲</sup></h4>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+            <p data-lang-en="To achieve a comprehensively well-off society, to build a prosperous, strong, democratic, civilized, and harmonious modern socialist country and to attain the Chinese dream of the great renaissance of the Chinese nation is to achieve prosperity, revitalize the nation, and bring about the happiness of the people…">
+                实现全面建成小康社会、建成富强民主文明和谐的社会主义现代化国家的奋斗目标，实现中华民族伟大复兴的中国梦，就是要实现国家富强、民族振兴、人民幸福……
+            </p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+            <p data-lang-en="If you have suggestions or comments, please send pull request to me. Of course, also welcome give me a star.">
+                如果你有建议或者意见，欢迎发pull request给我。当然，也欢迎点赞。
+            </p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+            <div class="controls">
+                <a class="pure-button pure-button-primary" href="https://github.com/soulteary/simple-i18N/zipball/master">Download ZIP</a>
+                <a class="pure-button" href="https://github.com/soulteary/simple-i18N">View On GitHub</a>
+            </div>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+            <h3 data-lang-en="Author">作者</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+            <p data-lang-en="[soulteary](http://www.soulteary.com)">
+                [苏洋](http://www.soulteary.com)
+            </p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
-      </footer>
+            <p data-lang-en="Twitter: @soulteary">
+                微博: @soulteary
+            </p>
+        </form>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-		
-  </body>
+
+</div>
+
+
+<script src="i18N.min.js?r=1403367474229" type="text/javascript"></script>
+</body>
 </html>
