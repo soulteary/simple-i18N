@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/soulteary/localStorage-limit-test.git"
+    "url": "git@github.com:soulteary/simple-i18N.git"
   },
   "keywords": [
     "i18N"
@@ -16,9 +16,9 @@
   "author": "soulteary (soulteary@qq.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/soulteary/localStorage-limit-test/issues"
+    "url": "https://github.com/soulteary/simple-i18N/issues"
   },
-  "homepage": "https://github.com/soulteary/localStorage-limit-test",
+  "homepage": "http://www.soulteary.com/2014/06/22/simple-i18n.html",
   "devDependencies": {
     "gulp": "^3.8.1",
     "gulp-clean": "^0.3.0",
