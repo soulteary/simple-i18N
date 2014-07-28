@@ -1,3 +1,5 @@
+"use strict";
+
 var Gulp = require('gulp'),
     Clean = require('gulp-clean'),
     Uglify = require('gulp-uglify'),
@@ -8,14 +10,14 @@ var Gulp = require('gulp'),
 
 /** 文件路径 **/
 var path = {
-    "src": "./src/",
+    "src"  : "./src/",
     "build": "./build/",
-    "html": "index.html",
-    "less": "style.less",
-    "css": "style.min.css",
-    "js": {
+    "html" : "index.html",
+    "less" : "style.less",
+    "css"  : "style.min.css",
+    "js"   : {
         "normal": "i18N.js",
-        "min": "i18N.min.js"
+        "min"   : "i18N.min.js"
     }
 };
 
@@ -48,14 +50,14 @@ Gulp.task('clean-js', function () {
 });
 
 
-/** 根据参数选择模板中使用的KISSY版本 **/
+/** 组装模板中的引入脚本 **/
 Gulp.task('build-html', ['clean'], function () {
     var jsTpl = '<script src="%s' + "?r=" + (new Date() - 0) + '" type="text/javascript"></script>';
     var cssTpl = '<link rel="stylesheet" href="%s' + '?r=' + (new Date() - 0) + '"/>';
 
     return Gulp.src(path.src + path.html)
         .pipe(HtmlReplace({
-            js: {
+            js : {
                 src: path.js.min,
                 tpl: jsTpl
             },

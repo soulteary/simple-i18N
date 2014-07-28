@@ -61,9 +61,9 @@
      */
     var config = {
         "version": cfg.ver,         //版本号
-        "key": "data-lang-",       //DOM节点保存文本的命名空间前缀
-        "tag": "data-lang",         //保存到父节点上的当前语言标志
-        "rule": {                   //语言规则
+        "key"    : "data-lang-",       //DOM节点保存文本的命名空间前缀
+        "tag"    : "data-lang",         //保存到父节点上的当前语言标志
+        "rule"   : {                   //语言规则
             "zh": "zh-CN",
             "en": "en-US"
         },
